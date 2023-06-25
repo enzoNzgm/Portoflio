@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet ChatBox</title>
+    <link rel="stylesheet" href="projet.css">
+    <link rel="icon" href="images/logo-E .png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="button"><a href="javascript:history.go(-1)"><button><span class="index">Retour<i
+                        class="gg-arrow-right"></i></span></button></a>
+    </div>
+    <h1 class="section-title">Projet <span class="span-title">ChatBox</span></h1>
+    <p>Au cours des deux ans de formation nous avons conçus un projet qui s'ameliorer en même temps que nos
+        compétences.Cette application interactive offre une plateforme de discussion en temps réel, permettant aux
+        utilisateurs d'échanger des messages.</p><br>
+    <p>En utilisant HTML et CSS, nous avons créé une interface attrayante et ergonomique pour offrir une expérience
+        utilisateur agréable. Les fonctionnalités de mise en forme et de personnalisation ont été soigneusement
+        intégrées pour rendre l'expérience de chat plus dynamique et interactive.</p><br>
+    <p>Grâce à PHP, nous avons développé la logique de traitement des messages, la gestion des utilisateurs et des
+        sessions, la sauvegarde des conversations et supression des messages, ainsi que la possibilité d'envoyé des
+        messages visible seulement par
+        les profeseurs ou les élèves.</p>
+    <img src="images/chatBoxV2.png" alt="">
+    <p>Dans le projet "ChatBox", j'ai également développé un espace de connexion pour permettre aux utilisateurs de
+        se connecter à leur profil. </p>
+    <p>L'interface de l'espace de connexion permet aux utilisateurs de saisir leurs
+        identifiants (nom d'utilisateur et mot de passe) pour accéder à leur compte. J'ai mis en place des
+        fonctionnalités de validation pour garantir la saisie correcte des informations et sécuriser l'accès aux comptes
+        des utilisateurs.</p><br>
+    <p>Le profil permet de se renseigner en temps que professeurs ou élèves, pour pouvoir soit envoyé un message global,
+        seulement aux éleves ou seulement aux professeurs.</p><br>
+    <p>Sans profil il est impossible d'avoir accès a la ChatBox grâce à la creation d'une session PHP qui vérifie si un
+        pseudo est renseigné, si il ne l'est pas un renvoi vers la page de connexion est effectué.</p>
+    <img src="images/connexion-qcm.png" alt="">
+    <h1 class="second-title">Base de données</h1>
+    <p>
+        Le projet ChatBox que nous avons développé repose sur une base de données MySQL pour stocker et gérer les
+        messages de
+        la chatbox, ainsi que les informations des utilisateurs. Notre base de données est structurée avec deux tables
+        principales : "message" et "users".</p><br>
+    <img src="images/bdd-chatbox.png" alt="">
+    <img src="images/schema-chatbox.png" alt="">
+    <p>
+        La table "message" enregistre les messages échangés dans la chatbox. Elle contient plusieurs colonnes
+        essentielles.
+        Tout d'abord, la colonne "idm" représente l'identifiant unique de chaque message enregistré. Ensuite, la colonne
+        "pseudo" stocke le pseudo de l'utilisateur qui a envoyé le message. La colonne "message" enregistre le contenu
+        du
+        message lui-même. La colonne "date" stocke la date et l'heure à laquelle le message a été envoyé. Enfin, la
+        colonne
+        "destinataire" spécifie à qui le message est destiné. Il peut être défini comme tous le monde, seulement les
+        profs ou seulement les élèves. Cette colonne permet de gérer les permissions d'accès aux messages en fonction
+        des
+        rôles des utilisateurs.
+    </p>
+    <img src="images/bdd-msg_chatbox.png" alt="">
+    <p>La table "users" contient les informations des utilisateurs nécessaires à la connexion. Elle peut contenir des
+        colonnes telles que "idu", "pseudo", "mdp", "mail". Cette table permet d'authentifier les utilisateurs et de
+        gérer leurs données personnelles.</p>
+    <img src="images/bdd-user_chatbox.png" alt="">
+    <p>Grâce à cette structure de base de données, notre application ChatBox est capable de stocker les messages
+        échangés et de les afficher en fonction des autorisations d'accès spécifiées. De plus, les informations des
+        utilisateurs sont enregistrées de manière sécurisée pour assurer une connexion fiable et protégée.
+
+    </p>
+    <div class="button"><a href="javascript:history.go(-1)"><button><span class="index">Retour<i
+                        class="gg-arrow-right"></i></span></button></a>
+    </div>
+</body>
+
+</html>

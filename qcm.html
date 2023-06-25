@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet QCM</title>
+    <link rel="stylesheet" href="projet.css">
+    <link rel="icon" href="images/logo-E .png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="button"><a href="javascript:history.go(-1)"><button><span class="index">Retour<i
+                        class="gg-arrow-right"></i></span></button></a>
+    </div>
+    <h1 class="section-title">Projet <span class="span-title">QCM</span></h1>
+    <p>En première année, j'ai réalisé un projet appelé "QCM", qui a été ma première expérience en PHP. Il
+        s'agissait d'un site proposant des QCM aléatoires permettant aux utilisateurs d'avoir la correction du QCM et
+        une note atribué a la fin.</p><br>
+    <p>Notre équipe a travaillé en étroite collaboration pour concevoir une interface conviviale et attrayante, en
+        utilisant HTML et CSS pour la structure et le design du site. Nous avons veillé à ce que l'expérience
+        utilisateur soit intuitive et agréable, en mettant en œuvre des fonctionnalités de navigation fluides et une
+        présentation visuelle soignée.</p><br>
+    <p>Et Grâce à PHP, nous avons développé les fonctionnalités essentielles du projet. La génération aléatoire des
+        questions, l'enregistrement des notes des utilisateurs et le calcul des résultats sont autant de
+        fonctionnalités qui ont été implémentées avec succès.</p>
+    <img src="images/qcm-index.png" alt="">
+    <img src="images/reponse-qcm.png" alt="">
+    <p>Dans le projet "QCM", j'ai également développé un espace de connexion pour permettre aux utilisateurs de
+        se connecter à leur profil. </p><br>
+    <p>L'interface de l'espace de connexion permet aux utilisateurs de saisir leurs
+        identifiants (nom d'utilisateur et mot de passe) pour accéder à leur compte. J'ai mis en place des
+        fonctionnalités de validation pour garantir la saisie correcte des informations et sécuriser l'accès aux comptes
+        des utilisateurs.</p>
+    <h1 class="second-title">Base de données</h1>
+    <img src="images/connexion-qcm.png" alt="">
+    <p>Le projet QCM que nous avons développé utilise une base de données MySQL pour stocker et gérer les informations
+        essentielles. Notre base de données est conçue avec quatre tables clés : "reponses", "questions", "resultat" et
+        "users".</p><br>
+    <p>La table "reponses" est utilisée pour enregistrer les réponses possibles à chaque question du questionnaire.
+        Chaque réponse est associée à un identifiant unique et est liée à la question correspondante.</p><br>
+    <p> La table "questions" contient les différentes questions du QCM. Chaque question est enregistrée avec un
+        identifiant unique, le texte de la question et l'identifiant de la réponse correcte associée à cette question.
+    </p><br>
+    <p>La table "resultat" est utilisée pour enregistrer les resultat des users renseignant l'identifiant de
+        l'utilisateur
+        le numero du qcm et sa note obtenu.
+    </p>
+    <img src="images/qcm-bdd.png" alt="">
+    <img src="images/schema-qcm.png" alt="">
+    <div class="button"><a href="javascript:history.go(-1)"><button><span class="index">Retour<i
+                        class="gg-arrow-right"></i></span></button></a>
+    </div>
+
+</body>
+
+</html>
