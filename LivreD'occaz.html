@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet LivreD'occaz</title>
+    <link rel="stylesheet" href="projet.css">
+    <link rel="icon" href="images/logo-E .png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="button"><a href="javascript:history.go(-1)"><button><span class="index">Retour<i
+                        class="gg-arrow-right"></i></span></button></a>
+    </div>
+    <h1 class="section-title">Projet <span class="span-title">LivreD'occaz</span></h1>
+    <p>Au cours des deux ans de formation nous avons conçus un projet qui s'ameliorer en même temps que nos
+        compétences.Ce projet web est mon client léger, cette application web est un site de mise en vente de petite
+        annonce de livre d'occasion .</p><br>
+    <p>En utilisant HTML et CSS, plus précisément Tailwind css, j'ai créé une interface attrayante et ergonomique pour
+        offrir une expérience
+        utilisateur agréable. Les fonctionnalités de mise en forme et de personnalisation ont été soigneusement
+        intégrées pour rendre l'expérience plus dynamique et interactive.</p><br>
+    <img src="images/livred'occazPP.png" alt="page d'accueil du projet"><br>
+    <p>Grâce à PHP et PHPMyAdmin, j'ai développé la logique de traitement des annonces, la gestion des utilisateurs et
+        des
+        sessions, la sauvegarde des annonces et leurs suppression, ainsi que la possibilité d'obtenir les détails tel
+        que la description, l'auteur, l'éditeur, le nombrede page, etc, grâce a un appelle vers l'API de GoogleBook.
+    </p>
+    <img src="images/ApiLivre.png" alt="extrait du call vers l'API de GoogleBook">
+    <p>Chaque livres est consultable sur la page d'une annonce est renseigné la description, l'editeur, l'auteur, le
+        nombre de page, l'ISBN, la date de publication, et la dimension. Ainsi que le prix renseigné par l'utilisateur.
+    </p><br>
+    <p>Voici la page d'un annonce : </p>
+    <img src="images/annonceLivre.png" alt="page d'une annonce">
+    <h1 class="second-title">Connexion </h1>
+    <p>Dans le projet "LivreD'occaz", j'ai également développé un espace d'inscription et de connexion pour permettre
+        aux utilisateurs de
+        se connecter à leur compte. </p><br>
+    <p>L'interface de l'espace de connexion permet aux utilisateurs de saisir leurs
+        identifiants (mail et mot de passe) pour accéder à leur compte et si l'utilisateur ne possède pas de compte il y
+        a la possibilité d'en créer un. J'ai mis en place des
+        fonctionnalités de validation pour garantir la saisie correcte du mot de passe.</p><br>
+    <p>Un fois dans la base de données le mot de passe et hacher afin de garantir une meilleur sécurité des données
+        personnels.</p><br>
+    <p>Sans profil il est possible d'avoir accès a la page d'accueil, mais il vous sera impossible de mettre une annonce
+        en ligne.</p>
+    <img src="images/connLivre.png" alt="page connexion du projet">
+    <h1 class="second-title">Mise en ligne d'annonce</h1>
+    <p>L'une des fonctionnalités principales du projet LivreD'occaz que nous avons développé est la possibilité pour les
+        utilisateurs de déposer des annonces sur le site. </p><br>
+    <p>En utilisant le formulaire de dépôt d'annonce, les utilisateurs peuvent fournir les informations nécessaires pour
+        finalisé la mise en ligne de l'annonce car grâce a l'API de GoogleBook, il suffit de renseigner l'ISBN du livre
+        et les autres information comme son auteur, éditeur, description ce remplirons et seront envoyé automatiquement
+        vers la base de données.</p><br>
+    <img src="images/creatLivre.png" alt="">
+
+    <h1 class="second-title">Base de données</h1>
+    <p>
+        Le projet ChatBox que nous avons développé repose sur une base de données MySQL pour stocker et gérer les
+        annonces, ainsi que les informations des utilisateurs. Notre base de données est structurée avec deux tables
+        principales : "annonces" et "users".</p><br>
+    <img src="images/tableBDDLivre.png" alt="tables de la base de données du site">
+    <p>
+        La table "annonces" enregistre les annonces publié sur la site. Elle contient plusieurs colonnes
+        essentielles, qui sont pour la plupart renseigné a la base de donnée grâce a l'API automatiquement.
+        Les seules colonnes que l'utilisateur entrera sont le prix et l'ISBN.
+    </p><br>
+    <p>
+        La table "Users" elle enregistre les utilisateurs qui s'inscrive sur la site, comme decrit dans la partie
+        "Connexion".
+        Le mot de passe de chaque utilisateur est hacher une fois intégrer daans la base de données, pour renforcer la
+        sécurité de cette dernière.
+    </p>
+    <div class="button"><a href="javascript:history.go(-1)"><button><span class="index">Retour<i
+                        class="gg-arrow-right"></i></span></button></a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet GestionMatos</title>
+    <link rel="stylesheet" href="projet.css">
+    <link rel="icon" href="images/logo-E .png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="button"><a href="javascript:history.go(-1)"><button><span class="index">Retour<i
+                        class="gg-arrow-right"></i></span></button></a>
+    </div>
+    <h1 class="section-title">Projet <span class="span-title">GestionMatos</span></h1>
+    <p>Durant l'année, nous avons réalisé un projet appelé "GestionMatos", qui est mon projet client lourd, c'est une
+        application Windows graphique qui permet de faire l'inventaire d'un parc informatique et gérer les interventions
+        sur celui-ci.</p><br>
+    <p>Notre équipe a travaillé en étroite collaboration pour concevoir une interface conviviale et attrayante, en
+        utilisant C# et le framework .NET.</p><br>
+    <p>Voici le contexte de notre projet: "La société JIMBHA située à Paris, leader de l’infogérance en France depuis
+        1995, décide de développer une application client lourd dans le but de faciliter son travail de gestionnaire de
+        parc informatique. Cette application permettra un gain de temps et une organisation bien précise qui aménagera
+        au mieux les ressources de la société."</p>
+    <img src="images/gestionMatos.png" alt="image de la page de gestion et création d'intervention ">
+    <img src="images/addMatos.png" alt="image de la page de gestion et création de matériel">
+    <p>Ce logiciel, qui a un accès sécurisé par un mot de passe, doit permettre :</p>
+    <ul>
+        <li>La programmation des interventions.</li>
+        <li>Leur validation une fois le travail terminé.</li>
+        <li>La levée d’alerte pour chaque matériel dont le MTBF depuis la dernière intervention va être atteinte.</li>
+    </ul><br>
+    <p>Ce projet dispose d'une documentation pour y accéder <a
+            href="https://drive.google.com/drive/folders/1Y4PAtLskTBIpB95A0gm5JYi_it5G02hb" target="_blank">cliquez ici
+            !</a></p>
+    <h1 class="second-title">Base de données</h1>
+    <p>Le projet GestionMatos que nous avons développé utilise une base de données SQL Server pour stocker et gérer les
+        informations essentielles. Notre base de données est conçue avec cinq tables : "Utilisateur", "TECHNICIEN",
+        "INTERVENTION", "MATERIEL" et "CLIENT". Voici le Modéle physique de données (MPD), de la base de données de
+        GestionMatos: </p><br>
+    <img src="images/MPDGM.png" alt="MPD de la base de données">
+    <p>La table " Utilisateur" est utilisée pour enregistrer les utilisateurs avec leur nom et mot de passe.</p><br>
+    <p> La table "TECHNICIEN" contient les différents techniciens de la société. Chaque technicien est enregistré avec
+        un identifiant unique. </p><br>
+    <p>La table "INTERVENTION" est utilisée pour enregistrer les interventions créées et prend comme clé étrangère
+        "ID_MAT" pour les matériels sur lesquels l'intervention à lieu et "ID_TECH" pour savoir quel technicien va
+        intervenir.</p><br>
+    <p>La table "CLIENT" est utilisée pour enregistrer dans cette table les clients de la société, ils sont renseignés
+        et
+        stocker dans
+        la base de donnée à partir de la page client de l'application. </p><br>
+    <p>La table "MATERIEL" est utilisée pour enregistrer dans cette table les matériaux des clients, chaque matériaux
+        possède une clé étrangère "ID_CLIENT" qui permet de renseigner le client qui détient le matériel. </p><br>
+    <p>Liens utiles du projet : </p>
+    <ul>
+        <li><a href="https://github.com/enzoNzgm/PPE-Client-Lourd" target="_blank">GITHUB du projet</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1Y4PAtLskTBIpB95A0gm5JYi_it5G02hb"
+                target="_blank">Documentation
+                (GoogleDrive)</a></li>
+    </ul>
+    <div class="button"><a href="javascript:history.go(-1)"><button><span class="index">Retour<i
+                        class="gg-arrow-right"></i></span></button></a>
+    </div>
+</body>
+
+</html>

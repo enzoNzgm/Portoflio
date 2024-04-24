@@ -323,19 +323,19 @@ nav a {
 }
 
 .javascript {
-    width: 60%;
+    width: 70%;
     background-color: #C70039;
     border-radius: 5px;
 }
 
 .csharp {
-    width: 50%;
+    width: 60%;
     background-color: #C70039;
     border-radius: 5px;
 }
 
 .php {
-    width: 55%;
+    width: 65%;
     background-color: #C70039;
     border-radius: 5px;
 }
@@ -781,7 +781,7 @@ footer {
 .reveal-visible {
     opacity: 1;
     transform: translateY(0);
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 
